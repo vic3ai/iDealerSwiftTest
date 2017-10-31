@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import KVLoading
 
 class OnlineLicenseViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
 
@@ -18,6 +19,7 @@ class OnlineLicenseViewController: UIViewController,UITableViewDataSource, UITab
         super.viewDidLoad()
         self.tableViewOnlineLicense.delegate = self
         self.tableViewOnlineLicense.dataSource = self
+        KVLoading.show()
         self.callGetOnlineLicenseWebService()
         print("dddd")
         // Do any additional setup after loading the view.
@@ -54,6 +56,7 @@ class OnlineLicenseViewController: UIViewController,UITableViewDataSource, UITab
                     
                 }
                 self.tableViewOnlineLicense.reloadData()
+                KVLoading.hide()
                 
             case .failure(let error):
                 print(error)
