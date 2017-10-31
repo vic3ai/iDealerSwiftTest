@@ -19,6 +19,7 @@ class OnlineLicenseViewController: UIViewController,UITableViewDataSource, UITab
         self.tableViewOnlineLicense.delegate = self
         self.tableViewOnlineLicense.dataSource = self
         self.callGetOnlineLicenseWebService()
+        print("dddd")
         // Do any additional setup after loading the view.
     }
 
