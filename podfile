@@ -1,0 +1,8 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0' 
+pod 'XLForm', '~> 3.0'
+pod 'Alamofire', '~> 4.5'
+pod 'SwiftyJSON'
+pod 'KVLoading', '~> 1.5'
+use_frameworks!
+target 'iDealer' 
