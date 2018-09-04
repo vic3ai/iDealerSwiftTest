@@ -1,38 +1,37 @@
 //
-//  OnlineLicenseViewController.swift
+//  OrderPointLicenseListViewController.swift
 //  iDealer
 //
-//  Created by IRS on 30/10/2017.
+//  Created by IRS on 01/11/2017.
 //  Copyright © 2017 IrsSoftware. All rights reserved.
 //
 
 import UIKit
 import Alamofire
 import KVLoading
+import SwiftyJSON
 
-class OnlineLicenseViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
-
-    @IBOutlet weak var tableViewOnlineLicense: UITableView!
-    var onlineLicenseObject = [AnyObject]()
+class OrderPointLicenseListViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+    var reqOrderPointListObject = [AnyObject]()
+    public var status:String!
+    public var dateFrom:String!
+    public var dateTo:String!
     
+    @IBOutlet weak var tableViewOrderPointLicense: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableViewOnlineLicense.delegate = self
-        self.tableViewOnlineLicense.dataSource = self
+        self.tableViewOrderPointLicense.delegate = self
+        self.tableViewOrderPointLicense.dataSource = self
+        let backToRegisterLicenseBarBtn = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: #selector(backFromOrderPointLicenseListView))
+        KVLoading.show()
+        self.navigationItem.setLeftBarButton(backToRegisterLicenseBarBtn, animated: false)
         
-        let backOnlineLicenseBarBtn = UIBarButtonItem(title: "< Back", style: UIBarButtonItemStyle.plain, target: self, action: #selector(backToMainPage))
-        
-        self.navigationItem.setLeftBarButton(backOnlineLicenseBarBtn, animated: false)
-        
-        
-        print("dddd")
         // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        KVLoading.show()
-        onlineLicenseObject.removeAll()
-        self.callGetOnlineLicenseWebService()
+        reqOrderPointListObject.removeAll()
+        self.callGetOrderPointRequestWebService()
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,38 +39,35 @@ class OnlineLicenseViewController: UIViewController,UITableViewDataSource, UITab
         // Dispose of any resources that can be recreated.
     }
     
-    func backToMainPage()
+    func backFromOrderPointLicenseListView()
     {
         self.navigationController?.dismiss(animated: false, completion: nil)
     }
+    // MARK:- Web service
     
-    // MARK: - Call web service
-    func callGetOnlineLicenseWebService()
+    func callGetOrderPointRequestWebService()
     {
         let loginParameters :Parameters = [
-            "DealerID":DealerModel.shareInstance.dealerLoginID!,
-            "PurchaseID":DealerModel.shareInstance.dealerPurchaseID!,
-            "ReqStatus":"NEW"
+            "DeviceID":"","DealerID":DealerModel.shareInstance.dealerLoginID as String! ,"PurchaseID":DealerModel.shareInstance.dealerPurchaseID as String! ,"Status":status ,"Device_YN":false,"DateFrom":dateFrom, "DateTo":dateTo,"AllDealer_YN":false
         ]
         
-        Alamofire.request("http://irssoftware.dyndns.info/DealerWebRequest/GetRequestList.aspx", method:.post, parameters: loginParameters, encoding: JSONEncoding.default).responseJSON { response in
+        Alamofire.request("http://irssoftware.dyndns.info/DealerWebRequest/GetDeviceStatus.aspx", method:.post, parameters: loginParameters, encoding: JSONEncoding.default).responseJSON { response in
             
             switch response.result {
                 
             case .success:
                 if let objJson = response.result.value as? [String:Any] {
-                    let results = objJson["LicenseList"] as? [[String:Any]]
+                    let results = objJson["AppList"] as? [[String:Any]]
                     
                     for i in 0 ..< (results?.count)!
                     {
-                        self.onlineLicenseObject.append(results?[i] as AnyObject)
+                        self.reqOrderPointListObject.append(results?[i] as AnyObject)
                     }
                     
-                    //print(results?[0]["CountryName"]! as! String)
+                    self.tableViewOrderPointLicense.reloadData()
+                    KVLoading.hide()
                     
                 }
-                self.tableViewOnlineLicense.reloadData()
-                KVLoading.hide()
                 
             case .failure(let error):
                 print(error)
@@ -81,7 +77,7 @@ class OnlineLicenseViewController: UIViewController,UITableViewDataSource, UITab
         }
         
     }
-
+    
     //MARK:-TableView
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -90,15 +86,15 @@ class OnlineLicenseViewController: UIViewController,UITableViewDataSource, UITab
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return onlineLicenseObject.count
+        return reqOrderPointListObject.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") ?? UITableViewCell(style:UITableViewCellStyle.subtitle, reuseIdentifier: "Cell")
         
-        cell.textLabel?.text = onlineLicenseObject[indexPath.row]["REQ_Comp_Name"] as? String
-        cell.detailTextLabel?.text = onlineLicenseObject[indexPath.row]["Price"] as? String
+        cell.textLabel?.text = reqOrderPointListObject[indexPath.row]["CompanyName1"] as? String
+        cell.detailTextLabel?.text = reqOrderPointListObject[indexPath.row]["DateTime"] as? String
         
         return cell
     }
@@ -110,12 +106,12 @@ class OnlineLicenseViewController: UIViewController,UITableViewDataSource, UITab
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let registerLicenseViewController = RegisterLicenseViewController()
         let navMainViewController: UINavigationController = UINavigationController(rootViewController: registerLicenseViewController)
-        registerLicenseViewController.viewToRegisterLicense = "Online Register"
+        registerLicenseViewController.viewToRegisterLicense = "OrderPoint"
         //print(onlineLicenseObject)
         
-        LibraryApi.shareInstance.lTCode = onlineLicenseObject[indexPath.row]["REQ_LT_Code"] as? String
-        LibraryApi.shareInstance.onlineRefCode = onlineLicenseObject[indexPath.row]["REQ_RefCode"] as? String
-        registerLicenseViewController.onlineLicenseDtlObject.append(onlineLicenseObject[indexPath.row] as AnyObject)
+        LibraryApi.shareInstance.lTCode = reqOrderPointListObject[indexPath.row]["REQ_LT_Code"] as? String
+        LibraryApi.shareInstance.onlineRefCode = reqOrderPointListObject[indexPath.row]["REQ_RefCode"] as? String
+        registerLicenseViewController.onlineLicenseDtlObject.append(reqOrderPointListObject[indexPath.row] as AnyObject)
         self.navigationController?.present(navMainViewController, animated: false, completion: nil)
         
     }

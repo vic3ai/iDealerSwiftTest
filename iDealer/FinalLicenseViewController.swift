@@ -11,7 +11,7 @@ import Alamofire
 import KVLoading
 
 protocol FinalLicenseDelegate:class {
-    func passBackFinalLicenseWithLicense(license:String, licenseCode:String)
+    func passBackFinalLicenseWithLicense(license:String, licenseCode:String, licensePrice:String)
 }
 
 class FinalLicenseViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
@@ -65,7 +65,7 @@ class FinalLicenseViewController: UIViewController, UITableViewDelegate, UITable
         //self.callCheckLicenseDtl(ltCode: finalLicenseObject[indexPath.row]["LTCode"] as! String, productKey: LibraryApi.shareInstance.productKey!)
         
         if delegate != nil {
-            delegate?.passBackFinalLicenseWithLicense(license: finalLicenseObject[indexPath.row]["Desc"] as! String, licenseCode: finalLicenseObject[indexPath.row]["LTCode"] as! String)
+            delegate?.passBackFinalLicenseWithLicense(license: finalLicenseObject[indexPath.row]["Desc"] as! String, licenseCode: finalLicenseObject[indexPath.row]["LTCode"] as! String, licensePrice: String(finalLicenseObject[indexPath.row]["Price"] as! Double))
         }
         
         _ = self.navigationController?.popViewController(animated: false)

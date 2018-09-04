@@ -18,6 +18,7 @@ class LicenseCategoryViewController: UIViewController, UITableViewDelegate, UITa
     var licenseCatObject = [AnyObject]()
     var rowDescriptor: XLFormRowDescriptor?
     var formDescriptor:XLFormDescriptor?
+    var licenseCatDM:[LicenseCategoryModel] = [];
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,10 +57,18 @@ class LicenseCategoryViewController: UIViewController, UITableViewDelegate, UITa
             case .success:
                 if let objJson = response.result.value as? [String:Any] {
                     let results = objJson["LicenseCategoryList"] as? [[String:Any]]
+                    //print(results);
+                    // Category, Desc, Type, Result, Price, LTCode
                     
                     for i in 0 ..< (results?.count)!
                     {
-                        self.licenseCatObject.append(results?[i] as AnyObject)
+                        print(results![i]["Result"]!);
+                        
+                        //self.licenseCatObject.append(results?[i] as AnyObject)
+                        
+                        //self.licenseCatObject.append(LicenseCategoryModel(category: results![i]["Category"] as! String, desc: results![i]["Desc"] as! String, licenseType: results![i]["Type"] as! String, result: results![i]["Result"]! as! String, price: results![i]["Price"]! as! Double, ltCode: "11111"));
+                        self.licenseCatDM.append(LicenseCategoryModel(category: results![i]["Category"] as! String, desc: results![i]["Desc"] as! String, licenseType: results![i]["Type"] as! String, result: results![i]["Result"]! as! String, price: results![i]["Price"]! as! Double, ltCode: "11111"))
+                        print(self.licenseCatDM[i].desc);
                     }
                     
                 }
@@ -85,14 +94,15 @@ class LicenseCategoryViewController: UIViewController, UITableViewDelegate, UITa
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return licenseCatObject.count
+        //return licenseCatObject.count
+        return licenseCatDM.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") ?? UITableViewCell(style:UITableViewCellStyle.subtitle, reuseIdentifier: "Cell")
         
-        cell.textLabel?.text = licenseCatObject[indexPath.row]["Desc"] as? String
-        //cell.detailTextLabel?.text = "bbbb 1234"
+        //cell.textLabel?.text = licenseCatObject[indexPath.row]["Desc"] as? String
+        cell.textLabel?.text = licenseCatDM[indexPath.row].desc;
         
         return cell
     }
@@ -104,18 +114,19 @@ class LicenseCategoryViewController: UIViewController, UITableViewDelegate, UITa
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let finalLicenseViewController = FinalLicenseViewController()
         finalLicenseViewController.delegate = self
-        finalLicenseViewController.licenseCat = (licenseCatObject[indexPath.row]["Category"] as? String)!
+        finalLicenseViewController.licenseCat = licenseCatDM[indexPath.row].category;
         self.navigationController?.pushViewController(finalLicenseViewController, animated: false)
     }
+    
 
-    // MArk: - Delegate
-    func passBackFinalLicenseWithLicense(license: String, licenseCode: String) {
+    // Mark: - Delegate
+    func passBackFinalLicenseWithLicense(license: String, licenseCode: String, licensePrice: String) {
         if let rowDescriptor = rowDescriptor {
             rowDescriptor.value = license
+            LibraryApi.shareInstance.licensePrice = licensePrice
             LibraryApi.shareInstance.lTCode = licenseCode
             _ = self.navigationController?.popViewController(animated: true)
         }
-        
     }
 
     /*

@@ -19,9 +19,14 @@ class LibraryApi{
     
     var myVariable:String?
     var purchaseID:String?
+    var dealerBal:String?
+    var dealerCountry:String?
     var loginID:String?
     var lTCode:String?
     var productKey:String?
+    var onlineRefCode:String?
+    var webServiceVersion:String = "2017.08.16"
+    var licensePrice:String?
     
     var myShareArray:[[String:String]] = [[String:String]]()
     
