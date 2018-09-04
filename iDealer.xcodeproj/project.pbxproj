@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		620FFD34200DF9AB00D86C5A /* Vehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FFD33200DF9AB00D86C5A /* Vehicles.swift */; };
+		622120AC1FEB4D120092D673 /* MobileApplicationCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622120AA1FEB4D120092D673 /* MobileApplicationCustomerViewController.swift */; };
+		622120AD1FEB4D120092D673 /* MobileApplicationCustomerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 622120AB1FEB4D120092D673 /* MobileApplicationCustomerViewController.xib */; };
+		622530A1203141C7005C65CA /* Truck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622530A0203141C6005C65CA /* Truck.swift */; };
+		622530A320314A22005C65CA /* UIAlertController+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622530A220314A22005C65CA /* UIAlertController+Convenience.swift */; };
+		6227B54F20453605009A240D /* VehicleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6227B54E20453605009A240D /* VehicleList.swift */; };
 		622BCABF1F7C97C6006E1920 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622BCABE1F7C97C6006E1920 /* AppDelegate.swift */; };
 		622BCAC11F7C97C7006E1920 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622BCAC01F7C97C7006E1920 /* ViewController.swift */; };
 		622BCAC61F7C97C7006E1920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 622BCAC51F7C97C7006E1920 /* Assets.xcassets */; };
@@ -20,6 +26,21 @@
 		622BCADE1F7CC02A006E1920 /* RegisterLicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622BCADC1F7CC02A006E1920 /* RegisterLicenseViewController.swift */; };
 		622BCADF1F7CC02A006E1920 /* RegisterLicenseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 622BCADD1F7CC02A006E1920 /* RegisterLicenseViewController.xib */; };
 		622BECF71F828E490030D163 /* LibraryApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622BECF61F828E490030D163 /* LibraryApi.swift */; };
+		6230F827201078E800A18508 /* VehicleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6230F825201078E800A18508 /* VehicleDetailViewController.swift */; };
+		6230F828201078E800A18508 /* VehicleDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6230F826201078E800A18508 /* VehicleDetailViewController.xib */; };
+		6233189D1FB17DE800FC9047 /* AddOnNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6233189B1FB17DE800FC9047 /* AddOnNewViewController.swift */; };
+		6233189E1FB17DE800FC9047 /* AddOnNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6233189C1FB17DE800FC9047 /* AddOnNewViewController.xib */; };
+		62398258200EF47800DCB65D /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62398257200EF47800DCB65D /* Car.swift */; };
+		6239825F200EFFFD00DCB65D /* VehiclesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6239825D200EFFFD00DCB65D /* VehiclesTableViewController.swift */; };
+		62398260200EFFFD00DCB65D /* VehiclesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6239825E200EFFFD00DCB65D /* VehiclesTableViewController.xib */; };
+		623B6AE11FEA12C1003CF579 /* MobileApplicationMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623B6ADF1FEA12C1003CF579 /* MobileApplicationMainViewController.swift */; };
+		623B6AE21FEA12C1003CF579 /* MobileApplicationMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 623B6AE01FEA12C1003CF579 /* MobileApplicationMainViewController.xib */; };
+		623B6AE51FEA1986003CF579 /* SignUpMobileAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623B6AE31FEA1986003CF579 /* SignUpMobileAppViewController.swift */; };
+		623B6AE61FEA1986003CF579 /* SignUpMobileAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 623B6AE41FEA1986003CF579 /* SignUpMobileAppViewController.xib */; };
+		623E9E371FAC53360076DF8D /* AddOnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623E9E351FAC53360076DF8D /* AddOnViewController.swift */; };
+		623E9E381FAC53360076DF8D /* AddOnViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 623E9E361FAC53360076DF8D /* AddOnViewController.xib */; };
+		623E9E3B1FAC586A0076DF8D /* AddOnListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623E9E391FAC586A0076DF8D /* AddOnListViewController.swift */; };
+		623E9E3C1FAC586A0076DF8D /* AddOnListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 623E9E3A1FAC586A0076DF8D /* AddOnListViewController.xib */; };
 		6247DCF21FA08CD800B9730B /* LicenseCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6247DCF01FA08CD800B9730B /* LicenseCategoryViewController.swift */; };
 		6247DCF31FA08CD800B9730B /* LicenseCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6247DCF11FA08CD800B9730B /* LicenseCategoryViewController.xib */; };
 		6247DCF61FA0964600B9730B /* FinalLicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6247DCF41FA0964600B9730B /* FinalLicenseViewController.swift */; };
@@ -31,14 +52,58 @@
 		62D1F35C1F80EA61000AC2B1 /* PresenterRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D1F35B1F80EA61000AC2B1 /* PresenterRowType.swift */; };
 		62D404321F851B6B004930B6 /* SelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D404301F851B6B004930B6 /* SelectedViewController.swift */; };
 		62D404331F851B6B004930B6 /* SelectedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62D404311F851B6B004930B6 /* SelectedViewController.xib */; };
+		62F294571FA965D600E22D39 /* OrderPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F294551FA965D600E22D39 /* OrderPointViewController.swift */; };
+		62F294581FA965D600E22D39 /* OrderPointViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62F294561FA965D600E22D39 /* OrderPointViewController.xib */; };
+		62F294621FA9B95500E22D39 /* DealerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F294601FA9B95500E22D39 /* DealerListViewController.swift */; };
+		62F294631FA9B95500E22D39 /* DealerListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62F294611FA9B95500E22D39 /* DealerListViewController.xib */; };
+		62F294671FA9BE3900E22D39 /* OrderPointLicenseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F294651FA9BE3900E22D39 /* OrderPointLicenseListViewController.swift */; };
+		62F294681FA9BE3900E22D39 /* OrderPointLicenseListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62F294661FA9BE3900E22D39 /* OrderPointLicenseListViewController.xib */; };
 		62F6C44A1F8CAB150065759C /* PublicFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6C4491F8CAB150065759C /* PublicFunc.swift */; };
 		62F6C44E1F8CC15D0065759C /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6C44C1F8CC15D0065759C /* CustomView.swift */; };
 		62F6C44F1F8CC15D0065759C /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62F6C44D1F8CC15D0065759C /* CustomView.xib */; };
+		62FCB8B52024698900DD2388 /* Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCB8B42024698900DD2388 /* Motorcycle.swift */; };
+		D60332F721240139006AA3B5 /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60332F5212400AD006AA3B5 /* CouchbaseLite.framework */; };
+		D60332F821240139006AA3B5 /* CouchbaseLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D60332F5212400AD006AA3B5 /* CouchbaseLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D60332FD212405F8006AA3B5 /* MVVMTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60332FB212405F8006AA3B5 /* MVVMTableViewController.swift */; };
+		D60332FE212405F8006AA3B5 /* MVVMTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60332FC212405F8006AA3B5 /* MVVMTableViewController.xib */; };
+		D603330021241210006AA3B5 /* TestVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60332FF21241210006AA3B5 /* TestVM.swift */; };
+		D6090E93212BBDC200148D62 /* RegisterLicenseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6090E92212BBDC200148D62 /* RegisterLicenseVM.swift */; };
+		D61EE17E213CE08700C9BA66 /* LicenseCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61EE17D213CE08700C9BA66 /* LicenseCategoryModel.swift */; };
+		D67B1818211D1FE20003238E /* DealerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B1817211D1FE20003238E /* DealerModel.swift */; };
+		D67B181A211D27720003238E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B1819211D27720003238E /* Constant.swift */; };
+		D6A85CE121215D5600350587 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A85CE021215D5600350587 /* MainModel.swift */; };
+		D6B1C5E52122CEB8003C6363 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1C5E42122CEB8003C6363 /* LoginVM.swift */; };
+		D6B1C5E72122CEF6003C6363 /* ddddd.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1C5E62122CEF6003C6363 /* ddddd.swift */; };
+		D6C76D12212E67B60063FD02 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C76D11212E67B60063FD02 /* CountryModel.swift */; };
+		D6CD02B221210E57006EC8E7 /* MainList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CD02B121210E57006EC8E7 /* MainList.swift */; };
+		D6CD02B521212607006EC8E7 /* RegisterMenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CD02B421212606006EC8E7 /* RegisterMenuList.swift */; };
+		D6CD02B721212EDA006EC8E7 /* RegisterTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CD02B621212EDA006EC8E7 /* RegisterTableModel.swift */; };
+		D6CD02BE21214BAB006EC8E7 /* TestHardCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CD02BD21214BAB006EC8E7 /* TestHardCode.swift */; };
 		FCE592861FB05DB6B5E0670E /* Pods_iDealer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7C8694CBF74E2CE4B50220 /* Pods_iDealer.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D60332F921240139006AA3B5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D60332F821240139006AA3B5 /* CouchbaseLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		36CF426F4C637B726842CECC /* Pods-iDealer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDealer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iDealer/Pods-iDealer.debug.xcconfig"; sourceTree = "<group>"; };
+		620FFD33200DF9AB00D86C5A /* Vehicles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicles.swift; sourceTree = "<group>"; };
+		622120AA1FEB4D120092D673 /* MobileApplicationCustomerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileApplicationCustomerViewController.swift; sourceTree = "<group>"; };
+		622120AB1FEB4D120092D673 /* MobileApplicationCustomerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MobileApplicationCustomerViewController.xib; sourceTree = "<group>"; };
+		622530A0203141C6005C65CA /* Truck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Truck.swift; sourceTree = "<group>"; };
+		622530A220314A22005C65CA /* UIAlertController+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Convenience.swift"; sourceTree = "<group>"; };
+		6227B54E20453605009A240D /* VehicleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleList.swift; sourceTree = "<group>"; };
 		622BCABB1F7C97C6006E1920 /* iDealer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDealer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		622BCABE1F7C97C6006E1920 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		622BCAC01F7C97C7006E1920 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +120,21 @@
 		622BCADD1F7CC02A006E1920 /* RegisterLicenseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterLicenseViewController.xib; sourceTree = "<group>"; };
 		622BCAE01F7CC2B3006E1920 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = "../../../Library/Developer/Xcode/DerivedData/iDealer-grneqijgqdmedlcejduwqugokmbp/Build/Products/Debug-iphonesimulator/Eureka/Eureka.framework"; sourceTree = "<group>"; };
 		622BECF61F828E490030D163 /* LibraryApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryApi.swift; sourceTree = "<group>"; };
+		6230F825201078E800A18508 /* VehicleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleDetailViewController.swift; sourceTree = "<group>"; };
+		6230F826201078E800A18508 /* VehicleDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VehicleDetailViewController.xib; sourceTree = "<group>"; };
+		6233189B1FB17DE800FC9047 /* AddOnNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddOnNewViewController.swift; sourceTree = "<group>"; };
+		6233189C1FB17DE800FC9047 /* AddOnNewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddOnNewViewController.xib; sourceTree = "<group>"; };
+		62398257200EF47800DCB65D /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		6239825D200EFFFD00DCB65D /* VehiclesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiclesTableViewController.swift; sourceTree = "<group>"; };
+		6239825E200EFFFD00DCB65D /* VehiclesTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VehiclesTableViewController.xib; sourceTree = "<group>"; };
+		623B6ADF1FEA12C1003CF579 /* MobileApplicationMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileApplicationMainViewController.swift; sourceTree = "<group>"; };
+		623B6AE01FEA12C1003CF579 /* MobileApplicationMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MobileApplicationMainViewController.xib; sourceTree = "<group>"; };
+		623B6AE31FEA1986003CF579 /* SignUpMobileAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpMobileAppViewController.swift; sourceTree = "<group>"; };
+		623B6AE41FEA1986003CF579 /* SignUpMobileAppViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpMobileAppViewController.xib; sourceTree = "<group>"; };
+		623E9E351FAC53360076DF8D /* AddOnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddOnViewController.swift; sourceTree = "<group>"; };
+		623E9E361FAC53360076DF8D /* AddOnViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddOnViewController.xib; sourceTree = "<group>"; };
+		623E9E391FAC586A0076DF8D /* AddOnListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddOnListViewController.swift; sourceTree = "<group>"; };
+		623E9E3A1FAC586A0076DF8D /* AddOnListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddOnListViewController.xib; sourceTree = "<group>"; };
 		6247DCF01FA08CD800B9730B /* LicenseCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicenseCategoryViewController.swift; sourceTree = "<group>"; };
 		6247DCF11FA08CD800B9730B /* LicenseCategoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LicenseCategoryViewController.xib; sourceTree = "<group>"; };
 		6247DCF41FA0964600B9730B /* FinalLicenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalLicenseViewController.swift; sourceTree = "<group>"; };
@@ -66,11 +146,35 @@
 		62D1F35B1F80EA61000AC2B1 /* PresenterRowType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterRowType.swift; sourceTree = "<group>"; };
 		62D404301F851B6B004930B6 /* SelectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedViewController.swift; sourceTree = "<group>"; };
 		62D404311F851B6B004930B6 /* SelectedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedViewController.xib; sourceTree = "<group>"; };
+		62F294551FA965D600E22D39 /* OrderPointViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderPointViewController.swift; sourceTree = "<group>"; };
+		62F294561FA965D600E22D39 /* OrderPointViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderPointViewController.xib; sourceTree = "<group>"; };
+		62F294601FA9B95500E22D39 /* DealerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealerListViewController.swift; sourceTree = "<group>"; };
+		62F294611FA9B95500E22D39 /* DealerListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealerListViewController.xib; sourceTree = "<group>"; };
+		62F294651FA9BE3900E22D39 /* OrderPointLicenseListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderPointLicenseListViewController.swift; sourceTree = "<group>"; };
+		62F294661FA9BE3900E22D39 /* OrderPointLicenseListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderPointLicenseListViewController.xib; sourceTree = "<group>"; };
 		62F6C4491F8CAB150065759C /* PublicFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicFunc.swift; sourceTree = "<group>"; };
 		62F6C44C1F8CC15D0065759C /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		62F6C44D1F8CC15D0065759C /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		62FCB8B42024698900DD2388 /* Motorcycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motorcycle.swift; sourceTree = "<group>"; };
 		8D7C8694CBF74E2CE4B50220 /* Pods_iDealer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDealer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99D323578F9DD762DB58A775 /* Pods-iDealer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDealer.release.xcconfig"; path = "Pods/Target Support Files/Pods-iDealer/Pods-iDealer.release.xcconfig"; sourceTree = "<group>"; };
+		D60332F5212400AD006AA3B5 /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CouchbaseLite.framework; path = ../CouchbaseLite.framework; sourceTree = "<group>"; };
+		D60332FB212405F8006AA3B5 /* MVVMTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMTableViewController.swift; sourceTree = "<group>"; };
+		D60332FC212405F8006AA3B5 /* MVVMTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVVMTableViewController.xib; sourceTree = "<group>"; };
+		D60332FF21241210006AA3B5 /* TestVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVM.swift; sourceTree = "<group>"; };
+		D6090E92212BBDC200148D62 /* RegisterLicenseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterLicenseVM.swift; sourceTree = "<group>"; };
+		D61EE17D213CE08700C9BA66 /* LicenseCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseCategoryModel.swift; sourceTree = "<group>"; };
+		D67B1817211D1FE20003238E /* DealerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealerModel.swift; sourceTree = "<group>"; };
+		D67B1819211D27720003238E /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		D6A85CE021215D5600350587 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		D6B1C5E22122C39C003C6363 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B1C5E42122CEB8003C6363 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		D6B1C5E62122CEF6003C6363 /* ddddd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ddddd.swift; sourceTree = "<group>"; };
+		D6C76D11212E67B60063FD02 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		D6CD02B121210E57006EC8E7 /* MainList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainList.swift; sourceTree = "<group>"; };
+		D6CD02B421212606006EC8E7 /* RegisterMenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterMenuList.swift; sourceTree = "<group>"; };
+		D6CD02B621212EDA006EC8E7 /* RegisterTableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTableModel.swift; sourceTree = "<group>"; };
+		D6CD02BD21214BAB006EC8E7 /* TestHardCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHardCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +182,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D60332F721240139006AA3B5 /* CouchbaseLite.framework in Frameworks */,
 				FCE592861FB05DB6B5E0670E /* Pods_iDealer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +190,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		620FFD32200DF97A00D86C5A /* vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				620FFD33200DF9AB00D86C5A /* Vehicles.swift */,
+				62398257200EF47800DCB65D /* Car.swift */,
+				6239825D200EFFFD00DCB65D /* VehiclesTableViewController.swift */,
+				6239825E200EFFFD00DCB65D /* VehiclesTableViewController.xib */,
+				6230F825201078E800A18508 /* VehicleDetailViewController.swift */,
+				6230F826201078E800A18508 /* VehicleDetailViewController.xib */,
+				62FCB8B42024698900DD2388 /* Motorcycle.swift */,
+				622530A0203141C6005C65CA /* Truck.swift */,
+				622530A220314A22005C65CA /* UIAlertController+Convenience.swift */,
+				6227B54E20453605009A240D /* VehicleList.swift */,
+			);
+			name = vehicle;
+			sourceTree = "<group>";
+		};
 		622BCAB21F7C97C6006E1920 = {
 			isa = PBXGroup;
 			children = (
@@ -106,25 +228,20 @@
 		622BCABD1F7C97C6006E1920 /* iDealer */ = {
 			isa = PBXGroup;
 			children = (
-				6247DCEF1FA08C9F00B9730B /* SelectedLicense */,
-				62F6C44B1F8CC15D0065759C /* CustomView */,
-				62F6C4481F8CAA3B0065759C /* Public Func */,
-				622BECF31F8275FA0030D163 /* Register */,
+				D60332FA212405CE006AA3B5 /* TestMVVM TableView */,
+				D6B1C5E32122CEA2003C6363 /* ViewModel */,
+				620FFD32200DF97A00D86C5A /* vehicle */,
+				D67B181B211D454D0003238E /* Controller */,
+				62F6C4481F8CAA3B0065759C /* Model */,
+				D67B180B211D15F70003238E /* View */,
 				622BCABE1F7C97C6006E1920 /* AppDelegate.swift */,
 				622BCAC01F7C97C7006E1920 /* ViewController.swift */,
 				622BCAC51F7C97C7006E1920 /* Assets.xcassets */,
 				622BCAC71F7C97C7006E1920 /* LaunchScreen.storyboard */,
 				622BCACA1F7C97C7006E1920 /* Info.plist */,
-				622BECF61F828E490030D163 /* LibraryApi.swift */,
 				622BCAD01F7C99EE006E1920 /* LoginViewController.swift */,
-				622BCAD11F7C99EE006E1920 /* LoginViewController.xib */,
 				622BCAD41F7C9F9D006E1920 /* MainViewController.swift */,
-				622BCAD51F7C9F9D006E1920 /* MainViewController.xib */,
 				62D1F3571F80C477000AC2B1 /* CountryViewController.swift */,
-				62D1F3581F80C477000AC2B1 /* CountryViewController.xib */,
-				62D1F35B1F80EA61000AC2B1 /* PresenterRowType.swift */,
-				62D404301F851B6B004930B6 /* SelectedViewController.swift */,
-				62D404311F851B6B004930B6 /* SelectedViewController.xib */,
 			);
 			path = iDealer;
 			sourceTree = "<group>";
@@ -133,39 +250,76 @@
 			isa = PBXGroup;
 			children = (
 				622BCAD81F7CAFCA006E1920 /* RegistrationViewController.swift */,
-				622BCAD91F7CAFCA006E1920 /* RegistrationViewController.xib */,
 				622BCADC1F7CC02A006E1920 /* RegisterLicenseViewController.swift */,
-				622BCADD1F7CC02A006E1920 /* RegisterLicenseViewController.xib */,
 			);
 			name = Register;
+			sourceTree = "<group>";
+		};
+		623B6ADE1FEA1220003CF579 /* MobileApplication */ = {
+			isa = PBXGroup;
+			children = (
+				623B6ADF1FEA12C1003CF579 /* MobileApplicationMainViewController.swift */,
+				623B6AE31FEA1986003CF579 /* SignUpMobileAppViewController.swift */,
+				622120AA1FEB4D120092D673 /* MobileApplicationCustomerViewController.swift */,
+			);
+			name = MobileApplication;
+			sourceTree = "<group>";
+		};
+		623E9E341FAC53060076DF8D /* AddOn */ = {
+			isa = PBXGroup;
+			children = (
+				623E9E351FAC53360076DF8D /* AddOnViewController.swift */,
+				623E9E391FAC586A0076DF8D /* AddOnListViewController.swift */,
+				6233189B1FB17DE800FC9047 /* AddOnNewViewController.swift */,
+			);
+			name = AddOn;
 			sourceTree = "<group>";
 		};
 		6247DCEF1FA08C9F00B9730B /* SelectedLicense */ = {
 			isa = PBXGroup;
 			children = (
 				6247DCF01FA08CD800B9730B /* LicenseCategoryViewController.swift */,
-				6247DCF11FA08CD800B9730B /* LicenseCategoryViewController.xib */,
 				6247DCF41FA0964600B9730B /* FinalLicenseViewController.swift */,
-				6247DCF51FA0964600B9730B /* FinalLicenseViewController.xib */,
 				628212E31FA726C7008ACBBF /* OnlineLicenseViewController.swift */,
-				628212E41FA726C7008ACBBF /* OnlineLicenseViewController.xib */,
 			);
 			name = SelectedLicense;
 			sourceTree = "<group>";
 		};
-		62F6C4481F8CAA3B0065759C /* Public Func */ = {
+		62F294541FA965B400E22D39 /* OrderPoint */ = {
 			isa = PBXGroup;
 			children = (
-				62F6C4491F8CAB150065759C /* PublicFunc.swift */,
+				62F294551FA965D600E22D39 /* OrderPointViewController.swift */,
+				62F294651FA9BE3900E22D39 /* OrderPointLicenseListViewController.swift */,
 			);
-			name = "Public Func";
+			name = OrderPoint;
+			sourceTree = "<group>";
+		};
+		62F2945F1FA9B90600E22D39 /* DealerList */ = {
+			isa = PBXGroup;
+			children = (
+				62F294601FA9B95500E22D39 /* DealerListViewController.swift */,
+			);
+			name = DealerList;
+			sourceTree = "<group>";
+		};
+		62F6C4481F8CAA3B0065759C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D61EE17C213CDFA800C9BA66 /* LicenseModel */,
+				D6C76D13212EA1F90063FD02 /* other */,
+				D6C76D10212E67530063FD02 /* Country */,
+				D60332F5212400AD006AA3B5 /* CouchbaseLite.framework */,
+				D6CD02BA21213899006EC8E7 /* MobileApp */,
+				D6CD02B921213887006EC8E7 /* Main */,
+				D6CD02B82121386F006EC8E7 /* Register */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		62F6C44B1F8CC15D0065759C /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
 				62F6C44C1F8CC15D0065759C /* CustomView.swift */,
-				62F6C44D1F8CC15D0065759C /* CustomView.xib */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -173,10 +327,174 @@
 		A9191F024EC5184B2C2E09B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D6B1C5E22122C39C003C6363 /* ReactiveCocoa.framework */,
 				622BCAE01F7CC2B3006E1920 /* Eureka.framework */,
 				8D7C8694CBF74E2CE4B50220 /* Pods_iDealer.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D60332FA212405CE006AA3B5 /* TestMVVM TableView */ = {
+			isa = PBXGroup;
+			children = (
+				D60332FB212405F8006AA3B5 /* MVVMTableViewController.swift */,
+				D60332FC212405F8006AA3B5 /* MVVMTableViewController.xib */,
+				D60332FF21241210006AA3B5 /* TestVM.swift */,
+			);
+			name = "TestMVVM TableView";
+			sourceTree = "<group>";
+		};
+		D61EE17C213CDFA800C9BA66 /* LicenseModel */ = {
+			isa = PBXGroup;
+			children = (
+				D61EE17D213CE08700C9BA66 /* LicenseCategoryModel.swift */,
+			);
+			name = LicenseModel;
+			sourceTree = "<group>";
+		};
+		D67B180B211D15F70003238E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D67B1810211D172A0003238E /* Other */,
+				D67B180F211D17130003238E /* MobileApp */,
+				D67B180D211D16A60003238E /* AddOn */,
+				D67B180C211D16730003238E /* OrderPoint */,
+				62D1F35B1F80EA61000AC2B1 /* PresenterRowType.swift */,
+				D67B180E211D16BB0003238E /* Register */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D67B180C211D16730003238E /* OrderPoint */ = {
+			isa = PBXGroup;
+			children = (
+				62F294561FA965D600E22D39 /* OrderPointViewController.xib */,
+				62F294661FA9BE3900E22D39 /* OrderPointLicenseListViewController.xib */,
+			);
+			name = OrderPoint;
+			sourceTree = "<group>";
+		};
+		D67B180D211D16A60003238E /* AddOn */ = {
+			isa = PBXGroup;
+			children = (
+				623E9E361FAC53360076DF8D /* AddOnViewController.xib */,
+				623E9E3A1FAC586A0076DF8D /* AddOnListViewController.xib */,
+				6233189C1FB17DE800FC9047 /* AddOnNewViewController.xib */,
+			);
+			name = AddOn;
+			sourceTree = "<group>";
+		};
+		D67B180E211D16BB0003238E /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				62F294611FA9B95500E22D39 /* DealerListViewController.xib */,
+				622BCAD91F7CAFCA006E1920 /* RegistrationViewController.xib */,
+				622BCADD1F7CC02A006E1920 /* RegisterLicenseViewController.xib */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		D67B180F211D17130003238E /* MobileApp */ = {
+			isa = PBXGroup;
+			children = (
+				623B6AE01FEA12C1003CF579 /* MobileApplicationMainViewController.xib */,
+				623B6AE41FEA1986003CF579 /* SignUpMobileAppViewController.xib */,
+				622120AB1FEB4D120092D673 /* MobileApplicationCustomerViewController.xib */,
+			);
+			name = MobileApp;
+			sourceTree = "<group>";
+		};
+		D67B1810211D172A0003238E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				622BCAD11F7C99EE006E1920 /* LoginViewController.xib */,
+				622BCAD51F7C9F9D006E1920 /* MainViewController.xib */,
+				62D404311F851B6B004930B6 /* SelectedViewController.xib */,
+				62D1F3581F80C477000AC2B1 /* CountryViewController.xib */,
+				62F6C44D1F8CC15D0065759C /* CustomView.xib */,
+				6247DCF11FA08CD800B9730B /* LicenseCategoryViewController.xib */,
+				6247DCF51FA0964600B9730B /* FinalLicenseViewController.xib */,
+				628212E41FA726C7008ACBBF /* OnlineLicenseViewController.xib */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		D67B181B211D454D0003238E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6CD02B321211763006EC8E7 /* Other */,
+				623B6ADE1FEA1220003CF579 /* MobileApplication */,
+				623E9E341FAC53060076DF8D /* AddOn */,
+				62F2945F1FA9B90600E22D39 /* DealerList */,
+				62F294541FA965B400E22D39 /* OrderPoint */,
+				6247DCEF1FA08C9F00B9730B /* SelectedLicense */,
+				62F6C44B1F8CC15D0065759C /* CustomView */,
+				622BECF31F8275FA0030D163 /* Register */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D6B1C5E32122CEA2003C6363 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D6B1C5E42122CEB8003C6363 /* LoginVM.swift */,
+				D6B1C5E62122CEF6003C6363 /* ddddd.swift */,
+				D6090E92212BBDC200148D62 /* RegisterLicenseVM.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		D6C76D10212E67530063FD02 /* Country */ = {
+			isa = PBXGroup;
+			children = (
+				D6C76D11212E67B60063FD02 /* CountryModel.swift */,
+			);
+			name = Country;
+			sourceTree = "<group>";
+		};
+		D6C76D13212EA1F90063FD02 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				622BECF61F828E490030D163 /* LibraryApi.swift */,
+				62F6C4491F8CAB150065759C /* PublicFunc.swift */,
+				D67B1817211D1FE20003238E /* DealerModel.swift */,
+				D67B1819211D27720003238E /* Constant.swift */,
+				D6CD02BD21214BAB006EC8E7 /* TestHardCode.swift */,
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
+		D6CD02B321211763006EC8E7 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				62D404301F851B6B004930B6 /* SelectedViewController.swift */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		D6CD02B82121386F006EC8E7 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				D6CD02B421212606006EC8E7 /* RegisterMenuList.swift */,
+				D6CD02B621212EDA006EC8E7 /* RegisterTableModel.swift */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		D6CD02B921213887006EC8E7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D6CD02B121210E57006EC8E7 /* MainList.swift */,
+				D6A85CE021215D5600350587 /* MainModel.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		D6CD02BA21213899006EC8E7 /* MobileApp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MobileApp;
 			sourceTree = "<group>";
 		};
 		F81B2F9D19C2C3AF36174390 /* Pods */ = {
@@ -200,7 +518,7 @@
 				622BCAB81F7C97C6006E1920 /* Frameworks */,
 				622BCAB91F7C97C6006E1920 /* Resources */,
 				167B6B3D408B05375691FB49 /* [CP] Embed Pods Frameworks */,
-				06B8EB8BB4EE3C0B7E3CA917 /* [CP] Copy Pods Resources */,
+				D60332F921240139006AA3B5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,7 +541,7 @@
 				TargetAttributes = {
 					622BCABA1F7C97C6006E1920 = {
 						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -250,16 +568,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				622120AD1FEB4D120092D673 /* MobileApplicationCustomerViewController.xib in Resources */,
+				6233189E1FB17DE800FC9047 /* AddOnNewViewController.xib in Resources */,
 				622BCADB1F7CAFCA006E1920 /* RegistrationViewController.xib in Resources */,
 				622BCAC91F7C97C7006E1920 /* LaunchScreen.storyboard in Resources */,
 				6247DCF31FA08CD800B9730B /* LicenseCategoryViewController.xib in Resources */,
 				62D1F35A1F80C477000AC2B1 /* CountryViewController.xib in Resources */,
+				62398260200EFFFD00DCB65D /* VehiclesTableViewController.xib in Resources */,
 				62D404331F851B6B004930B6 /* SelectedViewController.xib in Resources */,
+				623E9E3C1FAC586A0076DF8D /* AddOnListViewController.xib in Resources */,
+				D60332FE212405F8006AA3B5 /* MVVMTableViewController.xib in Resources */,
+				62F294581FA965D600E22D39 /* OrderPointViewController.xib in Resources */,
+				623B6AE21FEA12C1003CF579 /* MobileApplicationMainViewController.xib in Resources */,
 				622BCAC61F7C97C7006E1920 /* Assets.xcassets in Resources */,
+				62F294681FA9BE3900E22D39 /* OrderPointLicenseListViewController.xib in Resources */,
 				62F6C44F1F8CC15D0065759C /* CustomView.xib in Resources */,
+				623B6AE61FEA1986003CF579 /* SignUpMobileAppViewController.xib in Resources */,
 				628212E61FA726C7008ACBBF /* OnlineLicenseViewController.xib in Resources */,
+				6230F828201078E800A18508 /* VehicleDetailViewController.xib in Resources */,
+				62F294631FA9B95500E22D39 /* DealerListViewController.xib in Resources */,
 				6247DCF71FA0964600B9730B /* FinalLicenseViewController.xib in Resources */,
 				622BCAD31F7C99EE006E1920 /* LoginViewController.xib in Resources */,
+				623E9E381FAC53360076DF8D /* AddOnViewController.xib in Resources */,
 				622BCAD71F7C9F9D006E1920 /* MainViewController.xib in Resources */,
 				622BCADF1F7CC02A006E1920 /* RegisterLicenseViewController.xib in Resources */,
 			);
@@ -268,21 +598,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		06B8EB8BB4EE3C0B7E3CA917 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iDealer/Pods-iDealer-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		167B6B3D408B05375691FB49 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,14 +606,32 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iDealer/Pods-iDealer-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/KVLoading/KVLoading.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/XLForm/XLForm.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVLoading.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLForm.framework",
 			);
@@ -332,20 +665,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				623B6AE11FEA12C1003CF579 /* MobileApplicationMainViewController.swift in Sources */,
+				D67B181A211D27720003238E /* Constant.swift in Sources */,
+				D6CD02B521212607006EC8E7 /* RegisterMenuList.swift in Sources */,
 				628212E51FA726C7008ACBBF /* OnlineLicenseViewController.swift in Sources */,
+				D6B1C5E52122CEB8003C6363 /* LoginVM.swift in Sources */,
+				D6B1C5E72122CEF6003C6363 /* ddddd.swift in Sources */,
+				6239825F200EFFFD00DCB65D /* VehiclesTableViewController.swift in Sources */,
 				622BCAD21F7C99EE006E1920 /* LoginViewController.swift in Sources */,
 				62F6C44A1F8CAB150065759C /* PublicFunc.swift in Sources */,
+				62398258200EF47800DCB65D /* Car.swift in Sources */,
 				6247DCF61FA0964600B9730B /* FinalLicenseViewController.swift in Sources */,
+				62FCB8B52024698900DD2388 /* Motorcycle.swift in Sources */,
+				6227B54F20453605009A240D /* VehicleList.swift in Sources */,
+				D6090E93212BBDC200148D62 /* RegisterLicenseVM.swift in Sources */,
 				62D1F3591F80C477000AC2B1 /* CountryViewController.swift in Sources */,
 				622BCAC11F7C97C7006E1920 /* ViewController.swift in Sources */,
 				622BCABF1F7C97C6006E1920 /* AppDelegate.swift in Sources */,
+				D61EE17E213CE08700C9BA66 /* LicenseCategoryModel.swift in Sources */,
+				D6A85CE121215D5600350587 /* MainModel.swift in Sources */,
+				D603330021241210006AA3B5 /* TestVM.swift in Sources */,
+				D67B1818211D1FE20003238E /* DealerModel.swift in Sources */,
+				622530A320314A22005C65CA /* UIAlertController+Convenience.swift in Sources */,
+				623E9E371FAC53360076DF8D /* AddOnViewController.swift in Sources */,
 				622BCAD61F7C9F9D006E1920 /* MainViewController.swift in Sources */,
+				623E9E3B1FAC586A0076DF8D /* AddOnListViewController.swift in Sources */,
+				62F294671FA9BE3900E22D39 /* OrderPointLicenseListViewController.swift in Sources */,
+				6230F827201078E800A18508 /* VehicleDetailViewController.swift in Sources */,
 				622BCADA1F7CAFCA006E1920 /* RegistrationViewController.swift in Sources */,
+				622530A1203141C7005C65CA /* Truck.swift in Sources */,
 				622BECF71F828E490030D163 /* LibraryApi.swift in Sources */,
+				D6C76D12212E67B60063FD02 /* CountryModel.swift in Sources */,
 				6247DCF21FA08CD800B9730B /* LicenseCategoryViewController.swift in Sources */,
 				62D404321F851B6B004930B6 /* SelectedViewController.swift in Sources */,
 				62F6C44E1F8CC15D0065759C /* CustomView.swift in Sources */,
+				623B6AE51FEA1986003CF579 /* SignUpMobileAppViewController.swift in Sources */,
 				622BCADE1F7CC02A006E1920 /* RegisterLicenseViewController.swift in Sources */,
+				D6CD02BE21214BAB006EC8E7 /* TestHardCode.swift in Sources */,
+				D6CD02B221210E57006EC8E7 /* MainList.swift in Sources */,
+				D6CD02B721212EDA006EC8E7 /* RegisterTableModel.swift in Sources */,
+				6233189D1FB17DE800FC9047 /* AddOnNewViewController.swift in Sources */,
+				62F294571FA965D600E22D39 /* OrderPointViewController.swift in Sources */,
+				622120AC1FEB4D120092D673 /* MobileApplicationCustomerViewController.swift in Sources */,
+				62F294621FA9B95500E22D39 /* DealerListViewController.swift in Sources */,
+				D60332FD212405F8006AA3B5 /* MVVMTableViewController.swift in Sources */,
+				620FFD34200DF9AB00D86C5A /* Vehicles.swift in Sources */,
 				62D1F35C1F80EA61000AC2B1 /* PresenterRowType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,11 +826,17 @@
 			baseConfigurationReference = 36CF426F4C637B726842CECC /* Pods-iDealer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iDealer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.irs.iDealer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -477,11 +847,17 @@
 			baseConfigurationReference = 99D323578F9DD762DB58A775 /* Pods-iDealer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iDealer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.irs.iDealer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
